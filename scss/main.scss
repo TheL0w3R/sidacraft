@@ -159,11 +159,12 @@ body {
     border-radius: 10px;
     transform: translateY(-100vh);
     transition: transform 200ms ease;
+    box-shadow: 0 3px 6px rgba(#000, .16);
     h2 {
       margin: 0;
       border-top-right-radius: 10px;
       border-top-left-radius: 10px;
-      background: #171717;
+      background: #2a5e3d;
       padding: 20px;
       text-align: center;
       box-shadow: 0 3px 6px rgba(#000, .16);
