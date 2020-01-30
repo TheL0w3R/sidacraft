@@ -1,0 +1,133 @@
+@font-face {
+  font-family: "Minecraft";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+  src: local("Minecraft "), local("Minecraft"), url("../fonts/minecraft.woff2") format("woff2"), url("../fonts/minecraft.woff") format("woff");
+}
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  background: url(../img/background.jpg) #352935 no-repeat;
+  background-size: cover;
+}
+
+.backdrop {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+@supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
+  .backdrop {
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    background: rgba(0, 0, 0, 0.3);
+  }
+
+  .container main a {
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    background: rgba(79, 58, 54, 0.6) !important;
+  }
+  .container main a:hover {
+    background: rgba(107, 85, 79, 0.6) !important;
+  }
+}
+.container {
+  width: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
+  height: 100%;
+}
+.container main {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.container main h1 {
+  font-family: "Minecraft", sans-serif;
+  color: #d8d8d8;
+  font-size: 100px;
+  letter-spacing: 6px;
+  text-shadow: 0 3px 6px rgba(0, 0, 0, 0.32);
+  text-align: center;
+  margin: 0;
+}
+.container main h1.mobile {
+  display: none;
+}
+.container main a {
+  text-decoration: none;
+  color: #fff;
+  padding: 30px 80px;
+  background: #5e4844;
+  display: inline-block;
+  border-radius: 10px;
+  border: 2px solid #321f1b;
+  margin: 0 auto;
+  font-weight: 700;
+  font-size: 25px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.32);
+  transition: background-color 500ms ease, border-radius 300ms ease, box-shadow 300ms ease;
+}
+.container main a:hover {
+  background: #6b554f;
+  border-radius: 0;
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.6);
+}
+
+@media (max-width: 1200px) {
+  .container main h1 {
+    font-size: 80px;
+  }
+  .container main a {
+    font-size: 20px;
+    padding: 20px 50px;
+  }
+}
+@media (max-width: 950px) {
+  .container main h1 {
+    font-size: 60px;
+  }
+  .container main a {
+    font-size: 18px;
+    padding: 20px 50px;
+  }
+}
+@media (max-width: 690px) {
+  .container main h1 {
+    font-size: 60px;
+    display: none;
+  }
+  .container main h1.mobile {
+    display: inline-block;
+  }
+  .container main a {
+    font-size: 16px;
+    padding: 20px 50px;
+  }
+}
+@media (max-width: 690px) {
+  .container main h1 {
+    font-size: 40px;
+  }
+  .container main a {
+    font-size: 15px;
+    padding: 20px 50px;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
