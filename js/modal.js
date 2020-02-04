@@ -8,3 +8,6 @@ openButton.addEventListener('click', function(e) {
 modal.addEventListener('click', function (e) {
     modal.classList.remove('open');
 });
+
+var modalHeight = document.querySelector('.modal').clientHeight;
+document.querySelector('.scroll').setAttribute('style', 'height: ' + (modalHeight - 73) + 'px;');
