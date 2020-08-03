@@ -34,7 +34,7 @@ body {
 .backdrop {
   width: 100%;
   height: 100%;
-  background: rgba(#000, .5);
+  background: rgba(#000, .65);
 }
 
 @supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
@@ -158,7 +158,7 @@ body {
     display: inline-block;
     max-width: 400px;
     width: 90%;
-    background: rgba(#285e46, .98);
+    background: rgba(#285e46, .85);
     color: #fff;
     border-radius: 10px;
     transform: translateY(-100vh);
